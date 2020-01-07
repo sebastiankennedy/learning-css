@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center Horizontal - 水平居中</title>
+    <style type="text/css">
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #cccccc;
+        }
+
+        #child {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+        /*
+            margin 外边距
+            一个值 - 上右下左
+            二个值 - 上下，左右
+            三个值 - 上，左右，下
+            四个值 - 上，右，下，左
+            auto - 根据浏览器自动分配
+        */
+        #child {
+            /* display: table 和 display: block 都是可以实现同样的效果 */
+            display: table;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="child">水平居中</div>
+</div>
+</body>
+</html>
