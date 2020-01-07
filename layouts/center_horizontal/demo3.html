@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center Horizontal - 水平居中</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 200px;
+            background: #cccccc;
+        }
+
+        #child {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+
+        #parent {
+            /*
+                父级元素需要开启相对定位，否则子级元素相对于 body 元素进行定位
+            */
+            position: relative;
+        }
+
+        #child {
+            /*
+                子级元素开启绝对定位
+            */
+            position: absolute;
+            left: 50%;
+            /*  向左水平移动子级元素的一半宽度，等同于 transform: translateX(-100px)  */
+            transform: translateX(-50%);
+
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="child">水平居中</div>
+</div>
+</body>
+</html>
