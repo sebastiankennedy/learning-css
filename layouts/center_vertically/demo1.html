@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center Vertically</title>
+    <style>
+        #parent {
+            width: 200px;
+            height: 600px;
+            background: #cccccc;
+        }
+
+        #child {
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+
+        #parent {
+            /*
+                display: table-cell 属性，设置当前元素为 <td> 元素（单元格）
+                parent 设置为单元格之后，相当于把 child 设置为单元格的文本内容
+            */
+            display: table-cell;
+            /*
+                vertical-align 属性，设置文本内容的垂直方向对齐方式
+            */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="child">垂直居中</div>
+</div>
+</body>
+</html>
