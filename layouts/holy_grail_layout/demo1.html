@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>holy grail layout - 圣杯布局</title>
+    <style>
+        #left, #right, #center {
+            color: #ffffff;
+            height: 300px;
+        }
+
+        #left {
+            width: 200px;
+            background: #a8d8ea;
+        }
+
+        #center {
+            background-color: #aa96da;
+        }
+
+        #right {
+            width: 200px;
+            background-color: #ffffd2;
+        }
+    </style>
+    <style>
+        #left {
+            float: left;
+        }
+
+        #center {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+
+</div>
+<div id="right">
+
+</div>
+<!-- 同级元素，前面元素浮动后，后面元素可以向前流动；前面元素不浮动，后面元素浮动时，后面元素不向前流动 -->
+<div id="center">
+
+</div>
+</body>
+</html>
