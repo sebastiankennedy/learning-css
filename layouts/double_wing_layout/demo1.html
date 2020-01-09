@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Double Wing layout - 双飞翼布局</title>
+    <style>
+        #left, #right, #center {
+            color: #ffffff;
+            height: 300px;
+        }
+
+        #left {
+            width: 200px;
+            background: #a8d8ea;
+        }
+
+        #right {
+            width: 200px;
+            background-color: #ffffd2;
+        }
+
+        #center {
+            background-color: #aa96da;
+        }
+    </style>
+    <style>
+        #parent {
+            height: 300px;
+        }
+
+        #left {
+            float: left;
+            /* 将当前元素从当前行，移动到上一行同一位置 */
+            margin-left: -100%;
+        }
+
+        #center {
+            float: left;
+            /* 设置子级元素为父级元素宽度的 100% */
+            width: 100%;
+        }
+
+        #right {
+            float: left;
+            /* 将当前元素从当前行，移动到上一行最右位置 */
+            margin-left: -200px;
+        }
+
+        #inner {
+            height: 300px;
+            background-color: #fcbad3;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="center">
+        <div id="inner">
+
+        </div>
+    </div>
+    <div id="left">
+
+    </div>
+    <div id="right">
+
+    </div>
+</div>
+</body>
+</html>
