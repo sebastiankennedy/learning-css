@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>two column layout - 两列布局</title>
+    <style>
+        #left, #right {
+            color: #ffffff;
+            height: 300px;
+        }
+
+        #left {
+            width: 400px;
+            background: #a8d8ea;
+        }
+
+        #right {
+            background-color: #ffffd2;
+        }
+    </style>
+    <style>
+        #container {
+            /* 表格的单元格的宽度会自动分配 */
+            display: table;
+            /* 指定列宽由表格宽度和列宽度决定，自动设置自适应宽度 */
+            table-layout: fixed;
+            /* 父级元素设置 width: 100% */
+            width: 100%;
+        }
+
+        #left, #right {
+            height: 300px;
+            display: table-cell;
+        }
+
+        #left {
+            /* 子级元素设置 width: 400px 实现定宽 */
+            width: 400px;
+        }
+
+        #right {
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="left">
+
+    </div>
+    <div id="right">
+
+    </div>
+</div>
+</body>
+</html>
