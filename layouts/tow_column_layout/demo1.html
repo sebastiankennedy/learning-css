@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>two column layout - 两列布局</title>
+    <style>
+        #left, #right {
+            height: 100%;
+            color: #ffffff;
+        }
+
+        #left {
+            /* 左边容器定宽 */
+            width: 150px;
+            background: #bbded6;
+        }
+
+        #right {
+            background: #8ac6d1;
+        }
+
+        #left {
+            /* 当前元素脱离文档流 */
+            float: left;
+        }
+
+        #right {
+            margin-left: 150px;
+        }
+
+        #inner {
+            width: 100px;
+            height: 100px;
+            background-color: #fcbad3;
+            /* 实现效果兼容性较差，子级元素使用 clear: both 会出现问题 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+    Left Container
+</div>
+<div id="right">
+    <div id="inner"></div>
+    Right Container
+</div>
+</body>
+</html>
