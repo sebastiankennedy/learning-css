@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #left, #right {
+            height: 200px;
+            color: #ffffff;
+        }
+
+        /* 代码实现分割 */
+        #left {
+            float: left;
+            /* 设置更高层级，显示呈现出左容器 */
+            position: relative;
+            /* 左边容器定宽 */
+            width: 150px;
+            background: #bbded6;
+        }
+
+        #right {
+            float: right;
+            /* 左右容器脱离文档流之后，右容器设置 width: 100% 会挤到下一行 */
+            width: 100%;
+            /* 右容器向左偏移 150px，显示出左容器 */
+            margin-left: -150px;
+            background: #8ac6d1;
+        }
+
+        #main {
+            background-color: #aa96da;
+            /* 右容器没有设置宽度， 子级元素自动撑满父级元素的宽度，需要设置内边距 */
+            padding-left: 150px;
+            clear: both;
+        }
+    </style>
+    <title>two column layout - 两列布局</title>
+</head>
+<body>
+<div id="left">
+    Left Container
+</div>
+<div id="right">
+    <div id="main">
+        Right Content
+    </div>
+</div>
+</body>
+</html>
