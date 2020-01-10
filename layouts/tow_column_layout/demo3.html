@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>two column layout - 两列布局</title>
+    <style>
+        #left, #right {
+            color: #ffffff;
+            height: 300px;
+        }
+
+        #left {
+            width: 400px;
+            background: #aa96da;
+        }
+
+        #right {
+            background-color: #ffffd2;
+        }
+    </style>
+    <style>
+        #left {
+            float: left;
+        }
+
+        #right {
+            /* 开启 BFC 模式 - 当前元素的内部环境与外界完全隔离 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+
+</div>
+<div id="right">
+
+</div>
+</body>
+</html>
