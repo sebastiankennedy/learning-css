@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Column Layout - 单列布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        header {
+            height: 100px;
+            background-color: #464159;
+        }
+
+        nav {
+            height: 100%;
+            line-height: 100px;
+            max-width: 960px;
+            background-color: #8ac6d1;
+        }
+
+        main {
+            background-color: #fcbad3;
+        }
+
+        footer {
+            height: 100px;
+            line-height: 100px;
+            background-color: #6c7b95;
+        }
+    </style>
+    <style>
+        main {
+            height: calc(100vh - 200px);
+            line-height: calc(100vh - 200px);
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        nav {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>Nav</nav>
+</header>
+<main>
+    Main
+</main>
+<footer>
+    Footer
+</footer>
+</body>
+</html>
