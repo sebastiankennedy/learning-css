@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Column Layout - 单列布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #aa96da;
+        }
+
+        nav {
+            background: #6c7b95;
+            flex: 0 1 60px;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main {
+            background: #464159;
+            flex: 10 1 auto;
+            color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background: #be8abf;
+            flex: 0 1 80px;
+            color: #ffffff;
+        }
+
+        .left {
+            background-color: #ffffff;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: #be8abf;
+        }
+
+        .center {
+            background-color: #ffffff;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: #be8abf;
+        }
+
+        .right {
+            background-color: #ffffff;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: #be8abf;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        li {
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="left">L</div>
+        <div class="center">Title</div>
+        <div class="right">R</div>
+    </nav>
+    <main>
+        Main
+    </main>
+    <footer>
+        <ul>
+            <li>Home</li>
+            <li>Feed</li>
+            <li>Me</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
