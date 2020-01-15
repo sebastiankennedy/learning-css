@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex 属性讲解：flex</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .box {
+            /*
+            flex: flex-grow flex-shrink flex-basis 的缩写
+            flex: 1 1 auto，父级元素有剩余空间则同步扩大，父级元素没有剩余空间则同步缩小
+            flex: 0 1 150px，最高 150px 主轴方向长度，父级元素有剩余空间不会同步扩大，父级元素没有剩余空间则同步缩小
+            */
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+    <div class="box D">D</div>
+    <div class="box E">E</div>
+    <div class="box F">F</div>
+    <div class="box G">G</div>
+    <div class="box H">H</div>
+    <div class="box I">I</div>
+</div>
+</body>
+</html>
