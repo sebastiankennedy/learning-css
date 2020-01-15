@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex 属性讲解：flex-shrink</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .container {
+            width: 100px;
+        }
+
+        .box {
+            /*
+            flex item 主轴方向的大小总和超出了 flex container 的时候
+            flex item 沿着主轴方向缩小。
+            */
+            width: 100px;
+            /*
+            0 代表不会缩小
+            */
+            flex-shrink: 0;
+        }
+        .A{
+            flex-shrink: 1;
+        }
+        .B{
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+    <div class="box D">D</div>
+    <div class="box E">E</div>
+    <div class="box F">F</div>
+    <div class="box G">G</div>
+    <div class="box H">H</div>
+    <div class="box I">I</div>
+</div>
+</body>
+</html>
