@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex 属性讲解：flex-grow</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .container {
+            width: 600px;
+            flex-flow: column;
+        }
+
+        .box {
+            /*
+            flex item 主轴方向的大小总和没有超出 flex container 的时候
+            flex item 沿着主轴方向增大。
+            */
+            flex-grow: 1;
+        }
+
+        .A {
+            /*
+            表示总共六份, A(2) + B(1) + C(3)
+            */
+            flex-grow: 2;
+        }
+
+        .C {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+</div>
+</body>
+</html>
