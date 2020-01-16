@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    background-color: orange;
+    min-height: 500px;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .18);
+    font-size: 2rem;
+}
+
+.A {
+    background-color: #464159;
+}
+
+.B {
+    background-color: #6c7b95;
+}
+
+.C {
+    background-color: #8bbabb;
+}
+
+.D {
+    background-color: #c7f0db;
+}
+
+.E {
+    background-color: #8cba51;
+}
+
+.F {
+    background-color: #deff8b;
+}
+
+.G {
+    background-color: #fbceb5;
+}
+
+.H {
+    background-color: #ff5d6c;
+}
+
+.I {
+    background-color: #be8abf;
+}
