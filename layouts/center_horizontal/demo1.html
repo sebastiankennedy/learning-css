@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Center Horizontal - 水平居中</title>
     <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         #parent {
             width: 100%;
-            height: 200px;
+            height: 100vh;
             background: #cccccc;
         }
 
@@ -18,7 +23,8 @@
             height: 100px;
             background: orangered;
         }
-
+    </style>
+    <style>
         /*  父级元素使用 text-align: center  */
         #parent {
             text-align: center;
@@ -32,7 +38,8 @@
         #child {
             display: inline-block;
             /*  子级元素需要设置 text-align 避免继承父级元素的 text-align: center  */
-            text-align: left;
+            text-align: center;
+            color: #ffffff;
         }
     </style>
 </head>
