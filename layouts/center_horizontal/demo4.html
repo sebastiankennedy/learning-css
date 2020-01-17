@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center Horizontal - 水平居中</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            background-color: #464159;
+        }
+        #main{
+            width: 100px;
+            height: 100px;
+            background-color: #8ac6d1;
+        }
+    </style>
+    <style>
+        #container{
+            flex-direction: row;
+            justify-content: center;
+        }
+        #main {
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="main">
+        水平居中
+    </div>
+</div>
+</body>
+</html>
