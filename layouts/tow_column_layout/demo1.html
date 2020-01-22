@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>two column layout - 两列布局</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         #left, #right {
             height: 100%;
             color: #ffffff;
@@ -23,11 +28,15 @@
         }
 
         #left {
+            height: 100vh;
+            text-align: center;
             /* 当前元素脱离文档流 */
             float: left;
         }
 
         #right {
+            height: 100vh;
+            /* 避免遮住左边元素 */
             margin-left: 150px;
         }
 
@@ -36,7 +45,7 @@
             height: 100px;
             background-color: #fcbad3;
             /* 实现效果兼容性较差，子级元素使用 clear: both 会出现问题 */
-            clear: both;
+            /*clear: both;*/
         }
     </style>
 </head>
@@ -45,8 +54,8 @@
     Left Container
 </div>
 <div id="right">
-    <div id="inner"></div>
     Right Container
+    <div id="inner"></div>
 </div>
 </body>
 </html>
