@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contour Layout - 等高布局</title>
+</head>
+<style>
+    #parent {
+        background-color: #6c7b95;
+    }
+
+    #left {
+        width: 300px;
+        background-color: #8bbabb;
+    }
+
+    #right {
+        width: 300px;
+        background-color: #c7f0db;
+    }
+</style>
+<style>
+    /* 表格的单元格默认是等高的 */
+    #parent {
+        display: table;
+    }
+    #left {
+        display: table-cell;
+    }
+    #right {
+        display: table-cell;
+    }
+</style>
+<body>
+<div id="parent">
+    <!--  需要表格中存在内容填充  -->
+    <div id="left">Left</div>
+    <div id="right">Right</div>
+</div>
+</body>
+</html>
