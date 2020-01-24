@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #container {
+            /* 实现等分布局的父级元素属性 */
+            display: table;
+            width: 100%;
+        }
+
+        .column {
+            color: #ffffff;
+            height: 300px;
+            text-align: center;
+            /* 实现等分布局的子级元素属性 */
+            width: 25%;
+            display: table-cell;
+        }
+
+        .column1 {
+            background-color: #464159;
+        }
+
+        .column2 {
+            background-color: #6c7b95;
+        }
+
+        .column3 {
+            background-color: #8bbabb;
+        }
+
+        .column4 {
+            background-color: #c7f0db;
+        }
+    </style>
+    <title>Split Layout - 等分布局</title>
+</head>
+<body>
+<div id="container">
+    <div class="column column1">
+        <p>1</p>
+    </div>
+    <div class="column column2">
+        <p>2</p>
+    </div>
+    <div class="column column3">
+        <p>3</p>
+    </div>
+    <div class="column column4">
+        <p>4</p>
+    </div>
+</div>
+</body>
+</html>
