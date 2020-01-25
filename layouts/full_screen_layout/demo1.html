@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Screen Layout - 全屏布局</title>
+    <style>
+        html, body {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            height: 100px;
+            background-color: #6c7b95;
+            /* 实现固定定位与宽度 */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        footer {
+            height: 100px;
+            background-color: #fcbad3;
+            /* 实现固定定位与宽度 */
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        main {
+            background-color: #8bbabb;
+            /* 实现固定定位与宽度 */
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 100px;
+            bottom: 100px;
+            overflow: auto;
+        }
+
+        #left {
+            width: 300px;
+            height: 100%;
+            background-color: #ffffd2;
+            /* 实现固定定位与宽度 */
+            position: fixed;
+            left: 0;
+            top: 100px;
+            bottom: 100px;
+        }
+
+        #right {
+            margin-left: 300px;
+            height: 100%;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <div id="left"></div>
+    <div id="right"></div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
