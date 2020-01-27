@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi-Column Layout - 多列布局</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    #col1 {
+        background-color: red;
+    }
+
+    #col2 {
+        background-color: blue;
+    }
+
+    #col3 {
+        background-color: green;
+    }
+
+    #col4 {
+        background-color: yellow;
+    }
+</style>
+<style>
+    #parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .box {
+        flex: 1 1 auto;
+        height: 300px;
+    }
+</style>
+<body>
+<div id="parent">
+    <div id="col1" class="box"></div>
+    <div id="col2" class="box"></div>
+    <div id="col3" class="box"></div>
+    <div id="col4" class="box"></div>
+</div>
+</body>
+</html>
