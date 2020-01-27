@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Three Column Layout - 三列布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #left, #right, #center {
+            color: #ffffff;
+            height: 100vh;
+        }
+
+        #left {
+            width: 200px;
+            background: #a8d8ea;
+        }
+
+        #center {
+            width: 200px;
+            background-color: #aa96da;
+        }
+
+        #right {
+            background-color: #464159;
+        }
+    </style>
+    <style>
+        #left {
+            float: left;
+            position: relative;
+        }
+
+        #center {
+            float: left;
+            position: relative;
+        }
+
+        #right {
+            float: right;
+            width: 100%;
+            margin-left: -400px;
+        }
+
+        #main {
+            background-color: #fcbad3;
+            padding-left: 400px;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+    Left
+</div>
+<div id="center">
+    Center
+</div>
+<div id="right">
+    <div id="main">
+        Right
+    </div>
+</div>
+</body>
+</html>
