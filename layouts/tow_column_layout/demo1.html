@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>two column layout - 两列布局</title>
+    <title>Tow Column Layout - 两列布局</title>
     <style>
         * {
             margin: 0;
@@ -20,6 +20,8 @@
         #left {
             /* 左边容器定宽 */
             width: 150px;
+            height: 100vh;
+            text-align: center;
             background: #bbded6;
         }
 
@@ -28,8 +30,6 @@
         }
 
         #left {
-            height: 100vh;
-            text-align: center;
             /* 当前元素脱离文档流 */
             float: left;
         }
@@ -41,8 +41,8 @@
         }
 
         #inner {
-            width: 100px;
-            height: 100px;
+            width: 100vw;
+            height: 100vh;
             background-color: #fcbad3;
             /* 实现效果兼容性较差，子级元素使用 clear: both 会出现问题 */
             /*clear: both;*/
@@ -54,8 +54,9 @@
     Left Container
 </div>
 <div id="right">
-    Right Container
-    <div id="inner"></div>
+    <div id="inner">
+        Right Container
+    </div>
 </div>
 </body>
 </html>
