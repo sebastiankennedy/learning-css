@@ -8,35 +8,43 @@
     <title>Multi-Column Layout - 多列布局</title>
 </head>
 <style>
+    body {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+    }
+
     #col1 {
-        height: 300px;
-        background-color: red;
+        background-color: #be8abf;
     }
 
     #col2 {
-        height: 300px;
-        background-color: blue;
+        background-color: #ea9abb;
     }
 
     #col3 {
-        height: 300px;
-        background-color: green;
+        background-color: #fea5ad;
     }
 
     #col4 {
-        height: 300px;
-        background-color: yellow;
+        background-color: #f8c3af;
     }
 </style>
 <style>
     #parent {
-        /*column-count: 4;*/
-        /*column-width: 300px;*/
+        /*
+            column-count: 4;
+            column-width: 100px;
+        */
         columns: 4 100px;
         /* 设置列的间距 */
         column-gap: 40px;
         /* 设置列的边框 */
         column-rule: #464159 2px solid;
+    }
+
+    #parent > div {
+        height: 100vh;
     }
 </style>
 <body>
