@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contour Layout - 等高布局</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #parent {
+        background-color: #6c7b95;
+    }
+
+    #left {
+        width: 300px;
+        background-color: #8bbabb;
+    }
+
+    #right {
+        width: 300px;
+        background-color: #c7f0db;
+    }
+</style>
+<style>
+    /* 并不是实现真正的等高，只是视觉上等高的伪等高布局 */
+    #left, #right {
+        float: left;
+        width: 300px;
+        color: #ffffff;
+        padding-bottom: 9999px;
+        margin-bottom: -9999px;
+    }
+
+    #parent {
+        overflow: hidden;
+    }
+</style>
+<body>
+<div id="parent">
+    <!--  当 right 容器内容不断填充而增高时，left 容器也会跟着 right 同步增高。  -->
+    <div id="left">Left</div>
+    <div id="right">Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right</div>
+</div>
+</body>
+</html>
