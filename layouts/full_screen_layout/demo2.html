@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Screen Layout - 全屏布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #6c7b95;
+            flex: 0 0 100px;
+        }
+
+        footer {
+            background-color: #fcbad3;
+            flex: 0 0 100px;
+        }
+
+        main {
+            background-color: #8bbabb;
+            flex: 1 1 calc(100vh - 200px);
+            display: flex;
+            flex-direction: row;
+        }
+
+        #left {
+            flex: 0 0 300px;
+            background-color: #ffffd2;
+        }
+
+        #right {
+            flex: 1 1 auto;
+            background-color: orange;
+        }
+    </style>
+    <title>Full Screen Layout - 全屏布局</title>
+</head>
+<body>
+<header>
+</header>
+<main>
+    <div id="left"></div>
+    <div id="right"></div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
