@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#toggler:checked + label .box {
+    background-color: cyan;
+}
+
+#toggler {
+    display: none;
+}
+
+.hamburger-container {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 16px;
+}
+
+.hamburger-container span {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out 0.3s;
+}
+
+.hamburger-container span:nth-child(2) {
+    margin-top: 7px;
+}
+
+header {
+    background-color: #000;
+    height: 44px;
+    padding: 0 18px;
+}
+
+/* 当 input 被选中时，设置两条横线的动画 */
+#toggler:checked + label .hamburger-container span:nth-child(1) {
+    top: 4px;
+    transform: rotate(45deg);
+    transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+#toggler:checked + label .hamburger-container span:nth-child(2) {
+    top: -4px;
+    transform: rotate(-45deg);
+    transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.82);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    /* 往 Y 轴方向缩小至 0 的高度 */
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: transform 0.3s ease-in-out, height 0.3s ease-in-out 0.3s; 
+}
+
+#toggler:checked ~ nav {
+    height: calc(100vh - 44px);
+    /* 往 Y 轴方向展开至原来的高度 */
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+ul {
+    margin-top: 1em;
+    list-style: none;
+}
+
+li {
+    color: #fff;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+</head>
+<body>
+     <p id="id-selector">
+         id 选择器；一个 id 只能用在一个 HTML 页面的一个 HTML 元素中，
+         一个 HTML 元素也只能拥有一个 id。
+     </p>
+     <p>
+         class 选择器；一个 class 可以套用到多个 HTML 元素当中；
+         一个 HTML 元素也可以套用多个 class。
+     </p>
+     <p>
+         tag 选择器；直接使用 HTML 元素的名称，凡是对应的 HTML 元素都会生效。
+         div.container 这样声明代表 container 这个 class 只能套用在 div 元素上。
+     </p>
+     <p>
+         空格选择器；.container div 表示选取套用 .container 的 HTML 元素中的所有 div 元素。
+         但是不包括 .container 本身。
+     </p>
+     <p>
+         大于符号；.container > div 表示选取套用 .container 的 HTML 元素第一层的 div 子元素。
+     </p>
+     <p>
+         加号；.container + div，选取 .container 和它紧贴，同一层级的 div 元素。如果不是紧贴着，
+         则不生效。
+     </p>
+     <p>
+         波浪符号；.container ~ div，选取 .container 和它同一层级的所有 div 元素。
+     </p>
+     <p>
+         星号；* 表示选取所有 HTML 元素，.container ~ * 表示选取和 .container 同一层级的所有 HTML 元素。 
+     </p>
+     <p>
+         属性选择器；a[title] 表示选取所有带有 title 属性的 a 元素。也可以根据 a[title="HelloWorld"]，
+         根据属性值进行选取。
+     </p>
+     <p>
+         伪类；过多不一一介绍，直接查看官方文档：https://mzl.la/2IxFWjj。
+     </p>
+</body>
+</html>

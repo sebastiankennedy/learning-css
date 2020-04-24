@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 种常用的 CSS 单位</title>
+    <style>
+        body{
+            font-size: 18px;
+        }
+
+        p:nth-child(2) {
+            font-size: 2em;
+        }
+        div {
+            border: 2px solid black;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        PX，一个绝对单位，一个 px 是一个像素点。如果你正在使用 1920 * 1080 分辨率和 16:9 的比率的屏幕，
+        那就代表你的屏幕横向是由 1920 个像素点组成，竖向是由 1080 个像素点组成。这里要特别注意一下段落标签
+        的设定，一般调整字体代销都是需要调整行距，否则会出现行距过大或过小的问题。
+    </p>
+    <p>
+        em，一个相对单位，基于目前这个容器的大小，再根据 em 的值去乘出最终的大小，可以理解成为倍数。
+        如果 body 设置 font-size: 10px，当前 p 标签设置 font-size: 2em；那么当前 p 标签的 font-size
+        最终是 20px;
+    </p>
+    <div>
+        Hello World 18px * 1.5
+        <div>
+            Hello World 18px * 1.5 * 1.5
+            <div>
+                Hello Worlds 18px * 1.5 * 1.5
+            </div>
+        </div>
+    </div>
+    
+    <p>
+        rem，一个相对单位，基于 html 元素的大小，再根据 rem 的值去乘出最终的大小。
+    </p>
+
+    <p>
+        vw && vh，全称是 viewport width 和 viewport height，设置值只能从 1 到 100，
+        分别代表当前页面的可视宽度和可视高度。50vh 代表可视宽度的一半，70vh 代表可视高度的 70%。
+    </p>
+
+    <p>
+        vmin && vmax，一般配合 Resposive 来使用。
+    </p>
+</body>
+</html>
